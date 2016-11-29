@@ -1,0 +1,41 @@
+#ON GOING
+
+1.	Project creation:
+
+		rails new delivery_project --database=postgresql
+
+2.	Create git and branches
+
+		git init
+		git add .
+		git commit -am "Project creation"
+		git checkout -b development
+		git checkout -b database
+
+3.	Database configuration:
+
+		sudo service postgresql start
+		rake db:setup
+
+	We must write line of template 0 into database.yml
+
+		template: template0
+
+	Now we can configure database:
+
+		rake db:setup
+		rake db:migrate
+
+4.	Heroku configuration:
+
+		heroku create
+		heroku open
+
+	We must configure sqlite only for development and not for production:
+
+	gem 'sqlite3', group: :development
+	gem 'pg', group: :production
+
+	Now we cand bundle.
+	
+
