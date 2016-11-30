@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Totalamount:</strong>
+  <%= @order.totalamount %>
+</p>
+
+<p>
+  <strong>Deliveryamount:</strong>
+  <%= @order.deliveryamount %>
+</p>
+
+<p>
+  <strong>Productsamount:</strong>
+  <%= @order.productsamount %>
+</p>
+
+<p>
+  <strong>Orderlist:</strong>
+  <%= @order.orderlist %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @order.client %>
+</p>
+
+<p>
+  <strong>Zone:</strong>
+  <%= @order.zone %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @order.payment %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

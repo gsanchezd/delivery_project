@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  totalamount: 1
+  deliveryamount: 1
+  productsamount: 1
+  orderlist: MyString
+  client: one
+  zone: one
+  payment: one
+
+two:
+  totalamount: 1
+  deliveryamount: 1
+  productsamount: 1
+  orderlist: MyString
+  client: two
+  zone: two
+  payment: two
