@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  amount: 1
+  ordernumber: 1
+  tpye: MyString
+  status: MyString
+
+two:
+  name: MyString
+  amount: 1
+  ordernumber: 1
+  tpye: MyString
+  status: MyString
