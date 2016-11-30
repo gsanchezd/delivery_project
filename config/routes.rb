@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :zones
   get 'pages/home'
 
   get 'pages/status'
