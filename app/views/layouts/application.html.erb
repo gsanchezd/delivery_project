@@ -21,7 +21,9 @@
 
   <body>
     <div class="container">
-      <%= render 'layouts/navbar' %>
+      <% if employee_signed_in? %>
+        <%= render 'layouts/navbar' %>
+      <% end %>
       <%= yield %>  
     </div>
   </body>

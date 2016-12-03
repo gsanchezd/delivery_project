@@ -3,6 +3,36 @@
 		<h1>Pages#home</h1>
 		<p>Find me in app/views/pages/home.html.erb</p>
 	</div>
+
+
+
+
+ 
+	<div class="col-md-12 navbar-fixed-bottom text-center" id="login_form">
+		
+		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+			<div class="field">
+				<%= f.label :email %><br />
+				<%= f.email_field :email, autofocus: true %>
+			</div>
+
+			<div class="field">
+				<%= f.label :password %><br />
+				<%= f.password_field :password, autocomplete: "off" %>
+			</div>
+
+			<% if devise_mapping.rememberable? -%>
+				<div class="field">
+					<%= f.check_box :remember_me %>
+					<%= f.label :remember_me %>
+				</div>
+			<% end -%>
+
+			<div class="actions">
+				<%= f.submit "Log in" %>
+			</div>
+		<% end %>		
+	</div>
 </div>
 
 
