@@ -1,115 +1,119 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">HOME</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-
-
-        <li class="dropdown" id="orders_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pedidos<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="<%= new_order_path %>">Nuevo</a></li>
-            <li><a href="<%= orders_path %>">Todos</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">LIVE</a></li>
-          </ul>
-        </li>
-
-
-
-        <li class="dropdown" id="payments_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pagos<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="<%= new_payment_path %>">Nuevo</a></li>
-            <li><a href="<%= payments_path %>">Todos</a></li>
-          </ul>
-        </li>
-
-
-        <li class="dropdown" id="products_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="<%= new_product_path %>">Nuevo</a></li>
-            <li><a href="<%= products_path %>">Todos</a></li>
-          </ul>
-        </li>
-
-
-        <li class="dropdown" id="zones_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Zonas<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="<%= new_zone_path %>">Nuevo</a></li>
-            <li><a href="<%= zones_path %>">Todos</a></li>
-          </ul>
-        </li>
-
-
-        <li class="dropdown" id="categories_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorías<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="<%= new_category_path %>">Nuevo</a></li>
-            <li><a href="<%= categories_path %>">Todos</a></li>
-          </ul>
-        </li>
-
-
-        <li class="dropdown" id="reports_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Entregas</a></li>
-            <li><a href="#">Zonas</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Boletas</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Personalizados</a></li>
-          </ul>
-        </li>
-
-
-        <li class="dropdown" id="employees_dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Nuevo</a></li>
-            <li><a href="<#">Todos</a></li>
-          </ul>
-        </li>
-      </ul>
-
-
-
-
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Buscar pedido...">
+<div class="row">
+  <div class="col-md-12">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">HOME</a>
         </div>
-        <button type="submit" class="btn btn-default">Ver Estado</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="<%= pages_livemap_path %>">LIVE MAP</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario Logeado<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Ver Perfil</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Admin</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Cerrar Sesión</a></li>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+
+
+            <li class="dropdown" id="orders_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pedidos<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= new_order_path %>">Nuevo</a></li>
+                <li><a href="<%= orders_path %>">Todos</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">LIVE</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="dropdown" id="payments_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pagos<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= new_payment_path %>">Nuevo</a></li>
+                <li><a href="<%= payments_path %>">Todos</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown" id="products_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= new_product_path %>">Nuevo</a></li>
+                <li><a href="<%= products_path %>">Todos</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown" id="zones_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Zonas<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= new_zone_path %>">Nuevo</a></li>
+                <li><a href="<%= zones_path %>">Todos</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown" id="categories_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorías<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="<%= new_category_path %>">Nuevo</a></li>
+                <li><a href="<%= categories_path %>">Todos</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown" id="reports_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Entregas</a></li>
+                <li><a href="#">Zonas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Boletas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Personalizados</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown" id="employees_dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Nuevo</a></li>
+                <li><a href="<#">Todos</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+
+
+
+
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar pedido...">
+            </div>
+            <button type="submit" class="btn btn-default">Ver Estado</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="<%= pages_livemap_path %>">LIVE MAP</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario Logeado<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Ver Perfil</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Admin</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+</div>
