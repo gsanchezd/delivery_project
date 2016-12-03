@@ -1,3 +1,4 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+	before_action :authenticate_employee!, except: [:home, :status]
+	protect_from_forgery with: :exception
 end

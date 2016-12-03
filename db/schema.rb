@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203043326) do
+ActiveRecord::Schema.define(version: 20161203044756) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,8 +46,32 @@ ActiveRecord::Schema.define(version: 20161203043326) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "phone"
+    t.string   "emergencyphone"
+    t.string   "rut"
+    t.date     "bday"
+    t.string   "afp"
+    t.string   "insurance"
+    t.string   "genre"
+    t.string   "position"
+    t.string   "bike"
+    t.string   "bikeplate"
+    t.string   "bank"
+    t.integer  "accountnumber"
+    t.string   "accounttype"
     t.index ["email"], name: "index_employees_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_employees_on_reset_password_token", unique: true, using: :btree
+  end
+
+  create_table "order_employees", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "employee_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["employee_id"], name: "index_order_employees_on_employee_id", using: :btree
+    t.index ["order_id"], name: "index_order_employees_on_order_id", using: :btree
   end
 
   create_table "order_products", force: :cascade do |t|
@@ -113,6 +137,8 @@ ActiveRecord::Schema.define(version: 20161203043326) do
     t.datetime "updated_at",  null: false
   end
 
+  add_foreign_key "order_employees", "employees"
+  add_foreign_key "order_employees", "orders"
   add_foreign_key "order_products", "orders"
   add_foreign_key "order_products", "products"
   add_foreign_key "orders", "clients"
