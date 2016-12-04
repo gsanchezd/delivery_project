@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-helper_method :resource, :resource_name, :devise_mapping
+  helper_method :resource, :resource_name, :devise_mapping
   def home
   end
 

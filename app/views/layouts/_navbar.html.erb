@@ -85,7 +85,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Empleados<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Nuevo</a></li>
-                <li><a href="<#">Todos</a></li>
+                <li><a href="#">Todos</a></li>
               </ul>
             </li>
           </ul>
@@ -102,7 +102,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<%= pages_livemap_path %>">LIVE MAP</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario Logeado<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_employee.email %><span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Ver Perfil</a></li>
                 <li role="separator" class="divider"></li>
